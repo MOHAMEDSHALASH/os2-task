@@ -10,10 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Printing before folder contents'
-        run: ls
-
       - uses: actions/checkout@v3
-
-      - name: 'Printing after folder contents'
-        run: ls
+      - name: "Login to docker hub"
+        run: docker login --username mohamedshalash --password dckr_pat_le4G5fuWPnUHO4P1eeEAc-VMtEk
